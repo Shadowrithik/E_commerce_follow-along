@@ -55,3 +55,50 @@ Through mentor-guided sessions, you will learn to develop both front-end and bac
 ### 4. Role of Authentication in Web Applications  
 - Discover how authentication ensures secure access to sensitive resources.  
 - Implement user authentication features, including registration, login, and access control.  
+## **Milestone 2: Project Setup and Login Page**
+
+### What was achieved:
+- **Backend Setup:**
+  - Used Node.js and Express to create a backend server.
+  - Configured the server to listen on a designated port.
+  - Integrated MongoDB for efficient data storage.
+  - Verified the connection between the server and MongoDB.
+
+- **Login Page Development:**
+  - Designed the login page UI.
+  - Connected the frontend with the backend to handle user login requests.
+  - Set up form validation and error handling for login inputs.
+
+- **Backend Enhancements:**
+  - Created a `User` model for managing user data.
+  - Developed a `UserController` for handling login functionality.
+  - Integrated **Multer** for file uploads to manage user-related file storage.
+
+---
+
+## **Milestone 3: Product Page and Database Integration**
+
+### What will be achieved:
+- Build the product listing page.
+- Connect the product page with the MongoDB database to fetch and display product data dynamically.
+- Create a `Product` model for storing and managing product information.
+- Develop routes to handle:
+  - Fetching all products.
+  - Adding new products.
+  - Deleting or editing products.
+
+---
+
+## **Milestone 4: Checkout and Deployment**
+
+### What will be achieved:
+- Implement a fully functional checkout system:
+  - Shopping cart functionality.
+  - Order summary and confirmation.
+  - Payment gateway integration (e.g., Stripe or PayPal).
+- Test the end-to-end application.
+- Deploy the application to a hosting platform (e.g., Vercel, Netlify, or Heroku).
+- Ensure the project is production-ready with all dependencies and configurations finalized.
+
+### Milestone 5: Creating the Signup Page
+#### In this milestone, we focused on developing the signup page to enable users to create an account within the application. Key achievements include: Signup Page Implementation: Developed the Signup.jsx component with a user-friendly interface for account registration. Included form fields for user details such as name, email, and password. Form Validation: Added client-side validation logic to ensure proper input formatting and error messages for invalid entries. Integration with Routing: Configured navigation to and from the signup page using React Router for seamless user flow. Styling: Enhanced the design of the signup page to align with the application's overall styling for a consistent user experience. Code Organization: Refactored the code into reusable components where possible to promote cleaner and more maintainable code. This milestone enhances the user experience by allowing new users to register, paving the way for further integration with back-end user authentication systems.
