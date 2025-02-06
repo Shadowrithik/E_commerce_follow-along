@@ -55,6 +55,7 @@ Through mentor-guided sessions, you will learn to develop both front-end and bac
 ### 4. Role of Authentication in Web Applications  
 - Discover how authentication ensures secure access to sensitive resources.  
 - Implement user authentication features, including registration, login, and access control.  
+
 ## **Milestone 2: Project Setup and Login Page**
 
 ### What was achieved:
@@ -113,3 +114,4 @@ In this milestone, we completed the following:
 - Enhanced user authentication with JWT expiration handling.
 - Improved UI/UX by refining product pages and checkout flows.
 - Fixed bugs from previous milestones and improved error handling.
+
