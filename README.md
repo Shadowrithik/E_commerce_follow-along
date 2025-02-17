@@ -55,6 +55,7 @@ Through mentor-guided sessions, you will learn to develop both front-end and bac
 ### 4. Role of Authentication in Web Applications  
 - Discover how authentication ensures secure access to sensitive resources.  
 - Implement user authentication features, including registration, login, and access control.  
+
 ## **Milestone 2: Project Setup and Login Page**
 
 ### What was achieved:
@@ -113,6 +114,17 @@ In this milestone, we completed the following:
 - Enhanced user authentication with JWT expiration handling.
 - Improved UI/UX by refining product pages and checkout flows.
 - Fixed bugs from previous milestones and improved error handling.
+
+
+# Milestone 7: User Login
+
+This milestone focused on implementing a secure user login endpoint. Key achievements include:
+
+* **Secure Password Handling:** Implemented bcrypt hashing for passwords, ensuring they are never stored in plain text.  This protects user credentials even in the event of a database breach.
+* **Credential Validation:**  Developed a login endpoint that validates user credentials by comparing the bcrypt hash of the entered password with the stored hash.
+* **User Authentication:** Successfully implemented user authentication based on validated credentials.  This allows the system to identify and authorize users.
+* **Improved Security:**  Enhanced overall application security by implementing secure password handling practices.
+
 # Milestone 8: Designing the Homepage and Card Component
 In this milestone, we focused on creating a visually appealing and functional homepage layout with reusable components for showcasing products. Key achievements include:
 
@@ -181,3 +193,4 @@ Managed the fetched data using React useState and useEffect hooks to ensure dyna
 Passed the fetched product data to a ProductCard component.
 Used the product details (name, image, price, etc.) as props to display them dynamically.
 Applied responsive CSS styling to create a visually appealing product grid layout.
+
