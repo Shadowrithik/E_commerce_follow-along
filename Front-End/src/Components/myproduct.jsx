@@ -39,8 +39,7 @@ function Myproduct({ _id, name, images, description, price }) {
                 <button
                     className="w-full text-white px-4 py-2 rounded-md bg-neutral-900 hover:bg-neutral-700 transition duration-300"
                     onClick={handleEdit}
-                >
-                    Edit
+                >Edit
                 </button>
             </div>
         </div>
