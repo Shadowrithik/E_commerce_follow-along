@@ -55,7 +55,6 @@ Through mentor-guided sessions, you will learn to develop both front-end and bac
 ### 4. Role of Authentication in Web Applications  
 - Discover how authentication ensures secure access to sensitive resources.  
 - Implement user authentication features, including registration, login, and access control.  
-
 ## **Milestone 2: Project Setup and Login Page**
 
 ### What was achieved:
@@ -114,17 +113,6 @@ In this milestone, we completed the following:
 - Enhanced user authentication with JWT expiration handling.
 - Improved UI/UX by refining product pages and checkout flows.
 - Fixed bugs from previous milestones and improved error handling.
-
-
-# Milestone 7: User Login
-
-This milestone focused on implementing a secure user login endpoint. Key achievements include:
-
-* **Secure Password Handling:** Implemented bcrypt hashing for passwords, ensuring they are never stored in plain text.  This protects user credentials even in the event of a database breach.
-* **Credential Validation:**  Developed a login endpoint that validates user credentials by comparing the bcrypt hash of the entered password with the stored hash.
-* **User Authentication:** Successfully implemented user authentication based on validated credentials.  This allows the system to identify and authorize users.
-* **Improved Security:**  Enhanced overall application security by implementing secure password handling practices.
-
 # Milestone 8: Designing the Homepage and Card Component
 In this milestone, we focused on creating a visually appealing and functional homepage layout with reusable components for showcasing products. Key achievements include:
 
@@ -230,3 +218,21 @@ Future Enhancements & Experimentation
 Admin-Only Access: Restrict update functionality to authorized users, such as shop owners or admins.
 Real-Time Updates: Implement real-time data updates on the product listing page.
 Optimized Form Design: Enhance the form with file uploads for updating product images and improved field validation.
+
+# Milestone 14: Deleting Product Data from MongoDB
+In this milestone, we focused on implementing delete functionality for product data, allowing users to remove existing product records from the database. Key achievements include:
+
+Backend: Creating a Delete Endpoint
+Developed a DELETE endpoint to remove product data from MongoDB using the product ID.
+Used Mongoose to find and delete the product by its ID.
+Implemented error handling to manage scenarios where the product ID does not exist.
+
+Frontend: Delete Button and Request Handling
+Added a Delete button to each product card.
+Clicking the Delete button sends a request to the delete endpoint with the product ID.
+Implemented a confirmation dialog to ensure users intend to delete the product.
+Updated the product list dynamically to remove the deleted product without refreshing the page.
+
+UI and UX Enhancements
+Provided feedback on successful or failed delete operations.
+Enhanced the user experience with a clean and responsive UI for managing product deletions.
