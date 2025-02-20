@@ -245,3 +245,4 @@ By completing this milestone, we have:
 - Integrated the Navbar into all pages of the application.
 - Ensured smooth navigation between pages.
 - Made the Navbar responsive for all screen sizes.
+
