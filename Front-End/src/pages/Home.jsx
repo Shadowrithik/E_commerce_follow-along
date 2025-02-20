@@ -4,7 +4,7 @@
 
 import React, { useEffect, useState } from "react";
 import Product from "../components/Product";
-import Nav from "../Components/nav";
+import Nav from "./Components/nav";
 
 
 export default function Home() {
