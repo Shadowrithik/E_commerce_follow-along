@@ -1,8 +1,7 @@
 /* eslint-disable no-unused-vars */
-
 import './App.css';
 import React from 'react';
-import {Login,Signup,Home, CreateProduct, MyProducts, Cart, ProductDetails, Profile} from "./Routes/routes"
+import {Login,Signup,Home, CreateProduct, MyProducts, Cart, ProductDetails, Profile, CreateAddress} from "./Routes/Routes"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -18,6 +17,7 @@ function App() {
     <Route path="/cart" element={<Cart/>} />
     <Route path="/product/:id" element={<ProductDetails />} />
     <Route path="/profile" element={<Profile />} />
+    <Route path='/create-address' element={<CreateAddress />} />
     </Routes>
     </BrowserRouter>
   );
