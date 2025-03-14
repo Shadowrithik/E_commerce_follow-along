@@ -411,6 +411,3 @@ In this milestone, we successfully implemented the **OrderConfirmation** functio
 
 4. **Added Place Order Button**  
    - Implemented a button at the bottom of the page to confirm the order.  
-
-
-
