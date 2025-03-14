@@ -395,3 +395,19 @@ Order status (pending, shipped, delivered)
 Total price
 Timestamp
 Implemented an endpoint to store orders in the database.
+
+# Milestone 24 - Place Order Functionality ✅
+
+## Overview  
+In this milestone, we successfully implemented the **OrderConfirmation** functionality, ensuring a seamless checkout experience for users.
+1. **Displayed Ordered Products**  
+   - Listed all products that the user added to the cart before placing the order.  
+
+2. **Displayed Delivery Address**  
+   - Showed the address selected by the user for delivery.  
+
+3. **Displayed Total Cart Value**  
+   - Calculated and displayed the total price of all items in the cart.  
+
+4. **Added Place Order Button**  
+   - Implemented a button at the bottom of the page to confirm the order.  
