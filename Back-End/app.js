@@ -6,12 +6,17 @@ const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 const ErrorHandler = require("./middleware/error");
+const userRoutes = require("./controller/user");
+const productRoutes = require('./controller/product');
+const orders = require('./controller/orders');
+
 
 const app = express();
 
 // Middleware
 app.use(express.json());
 app.use(cookieParser());
+
 
 // Configure CORS to allow requests from React frontend
 app.use(cors({
@@ -27,7 +32,7 @@ app.use('/products', express.static(path.join(__dirname, 'products')));
 
 // Import Routes
 const userRoutes = require("./controller/user");
-const productRoutes = require('./controller/Product');
+const productRoutes = require('../controller/Product');
 
 // Route Handling
 app.use("/api/v2/user", userRoutes);
