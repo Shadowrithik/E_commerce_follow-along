@@ -423,3 +423,22 @@ In this milestone, an API endpoint is created to handle order placement. The end
 ### **Endpoint:** `POST /api/orders/place-order`
 **Description:**  
 This endpoint allows users to place orders by sending product details, their email, and shipping address.
+
+
+# Milestone26 **E-Commerce App (Backend & Frontend)**
+
+## **Project Overview**
+This project is an **E-Commerce Web Application** that allows users to **create accounts, manage products, add products to their cart, select addresses, and place orders**.  
+
+- **Backend:** Node.js, Express, MongoDB  
+- **Frontend:** React, React Router  
+
+---
+
+## **Features**
+✅ User Authentication (Signup/Login)  
+✅ Product Management (Create, Update, Delete)  
+✅ Shopping Cart Functionality  
+✅ Address Selection & Management  
+✅ Order Placement & History  
+✅ API Endpoints for Orders  
