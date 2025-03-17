@@ -1,9 +1,9 @@
-
 const express = require('express');
 const router = express.Router();
 const Order = require('../model/order'); // Adjust path as needed
 const User = require('../model/user');   // Adjust path as needed
 
+// Place Order
 router.post('/place-order', async (req, res) => {
     try {
         const { email, orderItems, shippingAddress } = req.body;
@@ -16,7 +16,7 @@ router.post('/place-order', async (req, res) => {
             return res.status(400).json({ message: 'Order items are required.' });
         }
         if (!shippingAddress) {
-            return res.status(400).jon({ message: 'Shipping address is required.' });
+            return res.status(400).json({ message: 'Shipping address is required.' });
         }
 
         // Retrieve user _id from the user collection using the provided email
@@ -40,7 +40,7 @@ router.post('/place-order', async (req, res) => {
         const orders = await Promise.all(orderPromises);
 
         // Clear user's cart after placing orders (assuming a Cart model exists)
-        await Cart.deleteMany({ user: user._id });
+        // await Cart.deleteMany({ user: user._id });
 
         res.status(201).json({ message: 'Orders placed and cart cleared successfully.', orders });
     } catch (error) {
@@ -48,4 +48,31 @@ router.post('/place-order', async (req, res) => {
         res.status(500).json({ message: error.message });
     }
 });
-module.exports = router
+
+// Get User Orders
+router.get('/my-orders', async (req, res) => { 
+    try {
+        const { email } = req.query;
+
+        // Validate the email parameter
+        if (!email) {
+            return res.status(400).json({ message: 'Email is required.' });
+        }
+
+        // Retrieve user _id from the user collection using the provided email
+        const user = await User.findOne({ email });
+        if (!user) {
+            return res.status(404).json({ message: 'User not found.' });
+        }
+
+        // Find all orders associated with the user
+        const orders = await Order.find({ user: user._id });
+
+        res.status(200).json({ orders });
+    } catch (error) {
+        console.error('Error fetching orders:', error);
+        res.status(500).json({ message: error.message });
+    }
+});
+
+module.exports = router;
