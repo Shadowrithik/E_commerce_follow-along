@@ -422,7 +422,6 @@ In this milestone, an API endpoint is created to handle order placement. The end
 
 ### **Endpoint:** `POST /api/orders/place-order`
 **Description:**  
-This endpoint allows users to place orders by sending product details, their email, and shipping address.
 
 
 # Milestone26 **E-Commerce App (Backend & Frontend)**
