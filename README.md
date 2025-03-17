@@ -411,3 +411,15 @@ In this milestone, we successfully implemented the **OrderConfirmation** functio
 
 4. **Added Place Order Button**  
    - Implemented a button at the bottom of the page to confirm the order.  
+
+# Milestone 25: Order Placement API
+
+## Overview
+
+In this milestone, an API endpoint is created to handle order placement. The endpoint receives product details, user information, and shipping address. The system retrieves the user’s `_id` using their email and stores individual orders in the MongoDB `orders` collection.
+
+## API Endpoint
+
+### **Endpoint:** `POST /api/orders/place-order`
+**Description:**  
+This endpoint allows users to place orders by sending product details, their email, and shipping address.
