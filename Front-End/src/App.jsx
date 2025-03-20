@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import './App.css';
 import React from 'react';
-import {Login,Signup,Home, CreateProduct, MyProducts, Cart, ProductDetails, Profile, CreateAddress, SelectAddress, OrderConfirmation} from "./Routes/routes"
+import {Login,Signup,Home, CreateProduct, MyProducts, Cart, ProductDetails, Profile, CreateAddress, SelectAddress, OrderConfirmation, MyOrdersPage} from "./Routes/routes"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
     <Route path='/create-address' element={<CreateAddress />} />
     <Route path='/select-address' element={<SelectAddress/>}/>
     <Route path='/OrderConfirmation' element={<OrderConfirmation/>}/>
+    <Route path='/Myorders' element={<MyOrdersPage/>}/>
     </Routes>
     </BrowserRouter>
   );

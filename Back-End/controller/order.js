@@ -50,7 +50,7 @@ router.post('/place-order', async (req, res) => {
 });
 
 // Get User Orders
-router.get('/my-orders', async (req, res) => { 
+router.get('/myorders', async (req, res) => { 
     try {
         const { email } = req.query;
 
