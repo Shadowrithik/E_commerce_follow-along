@@ -422,7 +422,6 @@ In this milestone, an API endpoint is created to handle order placement. The end
 
 ### **Endpoint:** `POST /api/orders/place-order`
 **Description:**  
-This endpoint allows users to place orders by sending product details, their email, and shipping address.
 
 
 # Milestone26 **E-Commerce App (Backend & Frontend)**
@@ -452,3 +451,4 @@ Display all the user orders
 We will add my-orders page in navbar for better navigation.
 
 Created a My Orders page that sends a GET request to the my-orders endpoint created in the previous milestone. The user's email is sent to the endpoint to retrieve all their orders, which are then displayed on the page. Additionally, added the My Orders page to the navbar for improved navigation.
+
